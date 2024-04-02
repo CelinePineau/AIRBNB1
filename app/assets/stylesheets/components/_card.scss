@@ -1,0 +1,39 @@
+.home-card {
+  position: relative;
+  height: 400px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.background-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  color: #100e0e;
+  background-color: rgba(174, 174, 176, 0.81);
+  text-decoration: none; /* Supprimer les soulignements pour les éléments de texte */
+}
+
+
+.title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.details, .address {
+  margin: 5px 0;
+}
+
+.address svg {
+  margin-bottom: 4px;
+}

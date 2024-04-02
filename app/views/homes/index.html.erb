@@ -1,0 +1,18 @@
+  <h2>Tous les Hotels</h2>
+  <% if @homes.any? %>
+    <div class="cards">
+      <% @homes.each do |home| %>
+
+        <%= link_to home_path(home) do %>
+
+          <%= render "shared/home_card", home: home %>
+          
+        <% end %>
+      <% end %>
+    </div>
+  <% else %>
+      <p class="no-result">Aucun résultat</p>
+  <% end %>
+
+<%= link_to "Retour à l'Accueil", root_path %>
+<%= link_to "Ajouter un autre hotel", new_home_path(@home) %>
